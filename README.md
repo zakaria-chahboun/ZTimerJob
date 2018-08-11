@@ -11,7 +11,7 @@ You can select two options : ***countdown***, or ***in a hour***.
 
 This program can open *PDF, WORLD, VEDIO, AUDIO, APPLICATION ..* **Anything!**
 
-You can **shutdown** your pc!!
+Also you can ***Play a sound*** without native program and you can ***shutdown*** your pc!!
 
 ---------------------------------------
 
