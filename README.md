@@ -42,6 +42,8 @@ Play Video! It's beautiful and easy to use ♥!
 
 [![Alt text](/Screenshots/Play.PNG)](https://youtu.be/xLpqp-xU6Ps)
 
+Download <a href='https://drive.google.com/open?id=1rREBLMeLF8VxDrkaHAy3q1nTQ5mTg0o7'>Link</a> *at moment for windows 32bit*
+
 ---------------------------
 <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/1259px-Twitter_Bird.svg.png" width="20px"> <a href="https://twitter.com/Zaki_Chahboun">@Zaki_Chahboun</a>
 <br>
