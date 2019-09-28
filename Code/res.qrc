@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/alarm-clock.png</file>
+        <file>res/hourglass.png</file>
+        <file>res/bell.png</file>
+        <file>res/music-player.png</file>
+        <file>res/play-button.png</file>
+        <file>res/icon (2).png</file>
+        <file>res/power-button-symbol.png</file>
+        <file>res/stopwatch.png</file>
+        <file>res/ZAKI PRO - PNG.png</file>
+    </qresource>
+</RCC>

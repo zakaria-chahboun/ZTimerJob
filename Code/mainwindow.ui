@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>627</width>
+    <height>369</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ZTimer Job v1.0 - By ZAKARIA CHAHBOUN</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="Page_Timer">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QLCDNumber" name="lcdNumber">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 0);
+color:rgb(255, 255, 255);
+border-radius:20px;</string>
+          </property>
+          <property name="digitCount">
+           <number>8</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Page_Tools">
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="1">
+         <widget class="QLabel" name="Icon_HOURS">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="res.qrc">:/res/alarm-clock.png</pixmap>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="AFTER_BOX">
+          <property name="title">
+           <string>After</string>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="1" column="0">
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Hours : Minutes : Seconds</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QTimeEdit" name="AFTER_TIMER">
+             <property name="currentSection">
+              <enum>QDateTimeEdit::HourSection</enum>
+             </property>
+             <property name="displayFormat">
+              <string>HH:mm:ss</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string>Target</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="Target_PlaySound">
+             <property name="text">
+              <string>Play Sounds!</string>
+             </property>
+             <property name="icon">
+              <iconset resource="res.qrc">
+               <normaloff>:/res/music-player.png</normaloff>:/res/music-player.png</iconset>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroup</string>
+             </attribute>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="4">
+            <widget class="QLineEdit" name="path">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <widget class="QToolButton" name="brows">
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QRadioButton" name="Target_StartProgram">
+             <property name="text">
+              <string>Start Program</string>
+             </property>
+             <property name="icon">
+              <iconset resource="res.qrc">
+               <normaloff>:/res/icon (2).png</normaloff>:/res/icon (2).png</iconset>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroup</string>
+             </attribute>
+            </widget>
+           </item>
+           <item row="4" column="0" colspan="5">
+            <widget class="QPushButton" name="Start">
+             <property name="styleSheet">
+              <string notr="true">padding:10px;
+color: white;
+background-color: rgb(10, 128, 255);</string>
+             </property>
+             <property name="text">
+              <string>Start!</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0" colspan="2">
+            <widget class="QSlider" name="volume">
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>50</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="invertedAppearance">
+              <bool>false</bool>
+             </property>
+             <property name="invertedControls">
+              <bool>false</bool>
+             </property>
+             <property name="tickPosition">
+              <enum>QSlider::NoTicks</enum>
+             </property>
+             <property name="tickInterval">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="3">
+            <widget class="QPushButton" name="testSound">
+             <property name="text">
+              <string>Test Sound</string>
+             </property>
+             <property name="icon">
+              <iconset resource="res.qrc">
+               <normaloff>:/res/play-button.png</normaloff>:/res/play-button.png</iconset>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoRepeat">
+              <bool>false</bool>
+             </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QLabel" name="volumeLabel">
+             <property name="text">
+              <string>Volume (50)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QRadioButton" name="Target_TurnOff">
+             <property name="text">
+              <string>Turn Off PC</string>
+             </property>
+             <property name="icon">
+              <iconset resource="res.qrc">
+               <normaloff>:/res/power-button-symbol.png</normaloff>:/res/power-button-symbol.png</iconset>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroup</string>
+             </attribute>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QGroupBox" name="EQUAL_BOX">
+          <property name="title">
+           <string>Equal</string>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>Hours : Minutes</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QTimeEdit" name="EQUAL_TIMER">
+             <property name="displayFormat">
+              <string>HH:mm</string>
+             </property>
+             <property name="calendarPopup">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="clock">
+             <property name="styleSheet">
+              <string notr="true">border-radius:10px;
+background-color: rgb(36, 122, 202);
+color: rgb(255, 255, 255);
+padding:3px;</string>
+             </property>
+             <property name="text">
+              <string>Time now -------------</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="Icon_TIMES">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="res.qrc">:/res/hourglass.png</pixmap>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>627</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFILE">
+    <property name="title">
+     <string>FILE</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionTools"/>
+    <addaction name="actionStop_Timer"/>
+    <addaction name="actionStyle_1"/>
+    <addaction name="actionStyle_2"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionCreator"/>
+   </widget>
+   <addaction name="menuFILE"/>
+   <addaction name="menuMenu"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+E</string>
+   </property>
+  </action>
+  <action name="actionCreator">
+   <property name="text">
+    <string>Creator</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+C</string>
+   </property>
+  </action>
+  <action name="actionTools">
+   <property name="text">
+    <string>Tools</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+T</string>
+   </property>
+  </action>
+  <action name="actionStop_Timer">
+   <property name="text">
+    <string>Stop Timer</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+S</string>
+   </property>
+  </action>
+  <action name="actionStyle_1">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Style 1 (Black)</string>
+   </property>
+  </action>
+  <action name="actionStyle_2">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Style 2 (White)</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>313</x>
+     <y>184</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>
